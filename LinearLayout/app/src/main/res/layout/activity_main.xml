@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FF00"
+        android:paddingBottom="12dp"
+        android:text="@string/short_text" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:letterSpacing="0.1"
+                android:padding="12dp"
+                android:text="@string/increment_button_text"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="italic|bold"
+                tools:targetApi="lollipop" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="#00FFFF"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:background="@color/red" />
+
+                <View
+                    android:layout_width="10dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="12dp"
+                    android:background="#BCBCBC"
+                    android:layout_marginStart="12dp" />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/increment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/increment_count" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/decrement_count" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/long_text" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
