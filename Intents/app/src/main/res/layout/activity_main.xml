@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Screen"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:id="@+id/explicit_intents_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Explicit Intents"
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/explicit_intents_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explicit Intent"/>
+
+    <TextView
+        android:id="@+id/implicit_intents_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Implicit Intents"
+        android:padding="8dp"
+        android:textSize="16sp"/>
+
+    <Button
+        android:id="@+id/browser_intents_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Browser"/>
+
+    <Button
+        android:id="@+id/email_intents_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send Email"/>
+
+    <Button
+        android:id="@+id/share_intents_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ShareCompat Dialog"/>
+
+</LinearLayout>
